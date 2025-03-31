@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Recommendations</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="./assets/fav.png" type="image/x-icon">
+    <style>
+        body {
+            background-image: url('./assets/bg.avif');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body class="font-sans flex justify-center items-center min-h-screen">
+    <div class=" p-8 shadow-lg rounded-lg w-full max-w-md text-center">
+        <h1 class="text-3xl font-semibold mb-6">Enter Your Details</h1>
+        <form class="bg-gray-100 p-6 shadow rounded-lg mb-6">
+            <label class="block mb-2 font-semibold">Skills:</label>
+            <input type="text" class="w-full p-2 border rounded mb-4" placeholder="Enter your skills">
+            
+            <label class="block mb-2 font-semibold">Stream:</label>
+            <select class="w-full p-2 border rounded mb-4">
+                <option value="science">Science</option>
+                <option value="commerce">Commerce</option>
+                <option value="arts">Arts</option>
+            </select>
+            
+            <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 w-full">Get Recommendations</button>
+        </form>
+
+        <h2 class="text-2xl font-semibold mb-4">Recommended Courses</h2>
+        <div class="grid grid-cols-1 gap-6">
+            <div class="bg-gray-100 p-4 shadow rounded-lg">
+                <h3 class="text-lg font-semibold">Machine Learning Specialization</h3>
+                <p class="text-gray-600">Recommended based on your skills.</p>
+            </div>
+            <div class="bg-gray-100 p-4 shadow rounded-lg">
+                <h3 class="text-lg font-semibold">Data Science Certification</h3>
+                <p class="text-gray-600">Recommended based on your skills.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

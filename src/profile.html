@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+    body {
+    background-image: url('./assets/bg.avif');
+    background-size: cover;
+    background-position:center;
+    background-repeat:repeat;
+    background-attachment: fixed; 
+}
+    </style>
+</head>
+<body class="flex flex-col items-center justify-center h-screen">
+    <div class="bg-amber-50 rounded-lg shadow-lg p-8 text-center w-96">
+        <img src="./assets/profile.png" alt="Profile Picture" class="w-24 h-24 mx-auto rounded-full mb-4">
+        <h1 class="text-3xl font-bold mb-6 text-blue-700">Your Profile</h1>
+
+        
+        <div class="space-y-4 ">
+            <p><strong>Name:</strong> John Doe</p>
+            <p><strong>Email:</strong> johndoe@example.com</p>
+            <p><strong>Skills:</strong> Python, AI, ML</p>
+            <p><strong>Stream:</strong> Computer Science</p>
+        </div>
+    </div>
+    
+     <a href="index.html" class="mt-6 bg-red-700 text-white py-2 px-6 rounded-lg hover:bg-red-500 transition">Logout</a>
+</body>
+</html>

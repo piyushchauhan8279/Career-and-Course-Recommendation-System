@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+    body {
+    background-image: url('./assets/bg.avif');
+    background-size: cover;
+    background-position:center;
+    background-repeat:repeat;
+    background-attachment: fixed; 
+}
+    </style>
+</head>
+<body class="bg-gray-100">
+    <div class="flex h-screen">
+        <!-- Sidebar -->
+        <div class="w-56 bg-blue-700 text-white p-6">
+            <h2 class="text-xl font-bold mb-6">Dashboard</h2>
+            <ul class="space-y-4">
+                <li><a href="welcome.html" class="block p-2 rounded">Home</a></li>
+                <li><a href="career.html" class="block hover:bg-blue-700 p-2 rounded">Career Recommendation</a></li>
+                <li><a href="course.html" class="block hover:bg-blue-700 p-2 rounded">Course Recommendation</a></li>
+                <li><a href="profile.html" class="block hover:bg-blue-700 p-2 rounded">Profile</a></li>
+                <li><a href="index.html" class="block hover:bg-red-600 p-2 rounded">Logout</a></li>
+            </ul>
+        </div>
+        
+        <!-- Main Content -->
+        <div class="flex-1 p-10">
+            <h1 class="text-3xl font-bold text-blue-600 mb-6">Welcome to Your Dashboard</h1>
+            <p class="text-gray-900">Select an option from the sidebar to proceed.</p>
+        </div>
+    </div>
+</body>
+</html>
